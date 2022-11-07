@@ -34,4 +34,10 @@ class SnapshotsController < ApplicationController
       render json: { error: snapshot.errors.full_messages }, status: :bad_request
     end
   end
+
+  def destroy
+    snapshot = Snapshot.find_by(id: params[:id])
+    snapshot.destroy
+    render json: { message: "Snapshot successfully deleted!" }
+  end
 end

@@ -50,3 +50,6 @@ Content-Type: application/json
   "title": "lol updated title!",
   "image": "updated image.url"
 }
+
+### Destroy
+DELETE http://localhost:3000/snapshots/4
