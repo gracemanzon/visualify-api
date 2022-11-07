@@ -1,4 +1,6 @@
 class SnapshotsController < ApplicationController
+  before_action :authenticate_user
+
   def index
     snapshots = Snapshot.all
     render json: snapshots.as_json

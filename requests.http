@@ -1,3 +1,7 @@
+### References
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Njc5NDQwNjZ9.szyWOb0O5jcnLFXy-eO4qQ1BelFH-mKu9qazUmivKvw
+
+
 ### Users Actions --------------------------------------------
 ### Index
 GET http://localhost:3000/users
@@ -26,12 +30,15 @@ Content-Type: application/json
 ### Snapshots Actions -----------------------------------------
 ### Index
 GET http://localhost:3000/snapshots
+Authorization: Bearer {{jwt}}
 
 ### Show
 GET http://localhost:3000/snapshots/2
+Authorization: Bearer {{jwt}}
 
 ### Create
 POST http://localhost:3000/snapshots
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -44,6 +51,7 @@ Content-Type: application/json
 
 ### Update
 PATCH http://localhost:3000/snapshots/3
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -52,4 +60,5 @@ Content-Type: application/json
 }
 
 ### Destroy
-DELETE http://localhost:3000/snapshots/4
+DELETE http://localhost:3000/snapshots/5
+Authorization: Bearer {{jwt}}
