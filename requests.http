@@ -44,12 +44,12 @@ Content-Type: application/json
 {
   "title": "new snapshot test",
   "start_date": "2016-03-23",
-  "end_start": "2016-09-27",
+  "end_date": "2016-09-27",
   "image": "image.url"
 }
 
 ### Update
-PATCH http://localhost:3000/snapshots/3
+PATCH http://localhost:3000/snapshots/5
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
