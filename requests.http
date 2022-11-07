@@ -23,7 +23,7 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "test@email.com",
+  "email": "mark@email.com",
   "password": "password"
 }
 
@@ -45,8 +45,7 @@ Content-Type: application/json
   "title": "new snapshot test",
   "start_date": "2016-03-23",
   "end_start": "2016-09-27",
-  "image": "image.url",
-  "user_id": 3
+  "image": "image.url"
 }
 
 ### Update

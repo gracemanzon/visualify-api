@@ -17,7 +17,7 @@ class SnapshotsController < ApplicationController
       start_date: params[:start_date],
       end_date: params[:end_date],
       image: params[:image],
-      user_id: params[:user_id],
+      user_id: current_user.id,
     )
     if snapshot.save
       render json: snapshot.as_json, status: :created
