@@ -23,4 +23,15 @@ class SnapshotsController < ApplicationController
       render json: { error: snapshot.errors.full_messages }, status: :bad_request
     end
   end
+
+  def update
+    snapshot = Snapshot.find_by(id: params[:id])
+    snapshot.title = params[:title] || snapshot.title
+    snapshot.image = params[:image] || snapshot.image
+    if snapshot.save
+      render json: snapshot.as_json, status: :ok
+    else
+      render json: { error: snapshot.errors.full_messages }, status: :bad_request
+    end
+  end
 end

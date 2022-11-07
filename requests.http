@@ -41,3 +41,12 @@ Content-Type: application/json
   "image": "image.url",
   "user_id": 3
 }
+
+### Update
+PATCH http://localhost:3000/snapshots/3
+Content-Type: application/json
+
+{
+  "title": "lol updated title!",
+  "image": "updated image.url"
+}
