@@ -29,18 +29,26 @@ class SnapshotsController < ApplicationController
 
   def update
     snapshot = Snapshot.find_by(id: params[:id])
-    snapshot.title = params[:title] || snapshot.title
-    snapshot.image = params[:image] || snapshot.image
-    if snapshot.save
-      render json: snapshot.as_json, status: :ok
+    if current_user.id == snapshot.user_id
+      snapshot.title = params[:title] || snapshot.title
+      snapshot.image = params[:image] || snapshot.image
+      if snapshot.save
+        render json: snapshot.as_json, status: :ok
+      else
+        render json: { error: snapshot.errors.full_messages }, status: :bad_request
+      end
     else
-      render json: { error: snapshot.errors.full_messages }, status: :bad_request
+      render json: { error: snapshot.errors.full_messages }, status: :unauthorized
     end
   end
 
   def destroy
     snapshot = Snapshot.find_by(id: params[:id])
-    snapshot.destroy
-    render json: { message: "Snapshot successfully deleted!" }
+    if current_user.id == snapshot.user_id
+      snapshot.destroy
+      render json: { message: "Snapshot successfully deleted!" }
+    else
+      render json: { error: snapshot.errors.full_messages }, status: :unauthorized
+    end
   end
 end

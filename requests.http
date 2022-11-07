@@ -1,5 +1,5 @@
 ### References
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Njc5NDYxNjJ9.1Rru78zqIGOpbN7Hx8aSUysFLEf31MSY61s74cx_CxE
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Njc5NDY4MDJ9.vrI1nGGEWZHTwqBKfxXi02jPR3togyWx_xqWSz9ee_0
 
 
 ### Users Actions --------------------------------------------
@@ -49,7 +49,7 @@ Content-Type: application/json
 }
 
 ### Update
-PATCH http://localhost:3000/snapshots/5
+PATCH http://localhost:3000/snapshots/7
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
@@ -59,5 +59,5 @@ Content-Type: application/json
 }
 
 ### Destroy
-DELETE http://localhost:3000/snapshots/5
+DELETE http://localhost:3000/snapshots/7
 Authorization: Bearer {{jwt}}
