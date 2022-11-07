@@ -1,4 +1,6 @@
 class ArtistsController < ApplicationController
+  before_action :authenticate_user
+
   def index
     artists = Artist.all
     render json: artists.as_json
@@ -25,7 +27,11 @@ class ArtistsController < ApplicationController
 
   def destroy
     artist = Artist.find_by(id: params[:id])
-    artist.destroy
-    render json: { message: "artist successfully deleted!" }
+    if current_user.id == artist.snapshot.user_id
+      artist.destroy
+      render json: { message: "artist successfully deleted!" }
+    else
+      render json: { error: artist.errors.full_messages }, status: :unauthorized
+    end
   end
 end

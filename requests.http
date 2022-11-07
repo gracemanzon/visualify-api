@@ -1,5 +1,5 @@
 ### References
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Njc5NDY4MDJ9.vrI1nGGEWZHTwqBKfxXi02jPR3togyWx_xqWSz9ee_0
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Njc5NTA1Mzd9.hn7hvlk3rJh8zd07RRhOnmVUSyWir4PZ-zriE1Xbiug
 
 
 ### Users Actions --------------------------------------------
@@ -23,7 +23,7 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "test@email.com",
+  "email": "mark@email.com",
   "password": "password"
 }
 
@@ -66,12 +66,15 @@ Authorization: Bearer {{jwt}}
 ### Artists Actions ------------------------------------------
 ### Index
 GET http://localhost:3000/snapshots/1/artists
+Authorization: Bearer {{jwt}}
 
 ### Show
 GET http://localhost:3000/snapshots/1/artists/1
+Authorization: Bearer {{jwt}}
 
 ### Create
 POST http://localhost:3000/snapshots/1/artists
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -80,4 +83,5 @@ Content-Type: application/json
 }
 
 ### Destroy
-DELETE http://localhost:3000/snapshots/1/artists/4
+DELETE http://localhost:3000/snapshots/1/artists/7
+Authorization: Bearer {{jwt}}
