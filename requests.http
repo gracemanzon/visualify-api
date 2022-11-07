@@ -65,7 +65,16 @@ Authorization: Bearer {{jwt}}
 
 ### Artists Actions ------------------------------------------
 ### Index
-GET http://localhost:3000/artists
+GET http://localhost:3000//snapshots/1/artists
 
 ### Show
-GET http://localhost:3000/artists/1
+GET http://localhost:3000/snapshots/1/artists/1
+
+### Create
+POST http://localhost:3000/snapshots/1/artists
+Content-Type: application/json
+
+{
+  "name": "a 2nd artist",
+  "image": "image.url"
+}
