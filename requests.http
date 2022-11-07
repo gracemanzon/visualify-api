@@ -1,4 +1,4 @@
-### Users Actions
+### Users Actions --------------------------------------------
 ### Index
 GET http://localhost:3000/users
 
@@ -13,7 +13,7 @@ Content-Type: application/json
   "password_confirmation": "password"
 }
 
-### Sessions Actions
+### Sessions Actions ------------------------------------------
 ### Create
 POST http://localhost:3000/sessions
 Content-Type: application/json
@@ -22,3 +22,7 @@ Content-Type: application/json
   "email": "test@email.com",
   "password": "password"
 }
+
+### Snapshots Actions -----------------------------------------
+### Index
+GET http://localhost:3000/snapshots
