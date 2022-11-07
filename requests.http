@@ -26,3 +26,6 @@ Content-Type: application/json
 ### Snapshots Actions -----------------------------------------
 ### Index
 GET http://localhost:3000/snapshots
+
+### Show
+GET http://localhost:3000/snapshots/2
