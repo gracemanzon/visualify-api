@@ -65,7 +65,7 @@ Authorization: Bearer {{jwt}}
 
 ### Artists Actions ------------------------------------------
 ### Index
-GET http://localhost:3000//snapshots/1/artists
+GET http://localhost:3000/snapshots/1/artists
 
 ### Show
 GET http://localhost:3000/snapshots/1/artists/1
@@ -78,3 +78,6 @@ Content-Type: application/json
   "name": "a 2nd artist",
   "image": "image.url"
 }
+
+### Destroy
+DELETE http://localhost:3000/snapshots/1/artists/4

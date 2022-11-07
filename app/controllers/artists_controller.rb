@@ -22,4 +22,10 @@ class ArtistsController < ApplicationController
       render json: { error: artist.errors.full_messages }, status: :bad_request
     end
   end
+
+  def destroy
+    artist = Artist.find_by(id: params[:id])
+    artist.destroy
+    render json: { message: "artist successfully deleted!" }
+  end
 end
