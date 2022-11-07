@@ -1,2 +1,14 @@
 ### Users Actions
+### Index
 GET http://localhost:3000/users
+
+### Create
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "new user test",
+  "email": "test@email.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
