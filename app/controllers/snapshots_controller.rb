@@ -8,4 +8,19 @@ class SnapshotsController < ApplicationController
     snapshot = Snapshot.find_by(id: params[:id])
     render json: snapshot.as_json
   end
+
+  def create
+    snapshot = Snapshot.new(
+      title: params[:title],
+      start_date: params[:start_date],
+      end_date: params[:end_date],
+      image: params[:image],
+      user_id: params[:user_id],
+    )
+    if snapshot.save
+      render json: snapshot.as_json, status: :created
+    else
+      render json: { error: snapshot.errors.full_messages }, status: :bad_request
+    end
+  end
 end
