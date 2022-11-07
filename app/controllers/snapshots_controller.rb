@@ -19,6 +19,7 @@ class SnapshotsController < ApplicationController
       image: params[:image],
       user_id: current_user.id,
     )
+
     if snapshot.save
       render json: snapshot.as_json, status: :created
     else

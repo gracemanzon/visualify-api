@@ -1,5 +1,5 @@
 ### References
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Njc5NDQwNjZ9.szyWOb0O5jcnLFXy-eO4qQ1BelFH-mKu9qazUmivKvw
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2Njc5NDYxNjJ9.1Rru78zqIGOpbN7Hx8aSUysFLEf31MSY61s74cx_CxE
 
 
 ### Users Actions --------------------------------------------
@@ -23,7 +23,7 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "mark@email.com",
+  "email": "test@email.com",
   "password": "password"
 }
 
