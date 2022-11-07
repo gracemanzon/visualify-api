@@ -3,4 +3,9 @@ class ArtistsController < ApplicationController
     artists = Artist.all
     render json: artists.as_json
   end
+
+  def show
+    artist = Artist.find_by(id: params[:id])
+    render json: artist.as_json
+  end
 end
