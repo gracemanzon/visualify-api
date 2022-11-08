@@ -29,7 +29,7 @@ class ArtistsController < ApplicationController
     artist = Artist.find_by(id: params[:id])
     if current_user.id == artist.snapshot.user_id
       artist.destroy
-      render json: { message: "artist successfully deleted!" }
+      render json: { message: "Artist successfully removed from Snapshot!" }
     else
       render json: { error: artist.errors.full_messages }, status: :unauthorized
     end
