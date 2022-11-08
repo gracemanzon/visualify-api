@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :snapshots do
     resources :artists
     resources :songs
+    resources :genres
   end
 end
