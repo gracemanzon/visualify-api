@@ -4,4 +4,5 @@ class Snapshot < ApplicationRecord
   belongs_to :user
   has_many :artists
   has_many :songs
+  has_many :genres
 end
