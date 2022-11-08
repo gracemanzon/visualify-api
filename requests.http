@@ -112,3 +112,6 @@ Authorization: Bearer {{jwt}}
 ### Genres Actions ------------------------------------------
 ### Index
 GET http://localhost:3000/snapshots/1/genres
+
+### Show
+GET http://localhost:3000/snapshots/1/genres/1
