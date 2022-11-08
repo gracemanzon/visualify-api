@@ -115,3 +115,12 @@ GET http://localhost:3000/snapshots/1/genres
 
 ### Show
 GET http://localhost:3000/snapshots/1/genres/1
+
+### Create
+POST http://localhost:3000/snapshots/1/genres
+Content-Type: application/json
+
+{
+  "title": "another genre",
+  "snapshot_id": 1
+}
