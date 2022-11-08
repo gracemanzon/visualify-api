@@ -49,7 +49,7 @@ Content-Type: application/json
 }
 
 ### Update
-PATCH http://localhost:3000/snapshots/7
+PATCH http://localhost:3000/snapshots/8
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
@@ -59,7 +59,7 @@ Content-Type: application/json
 }
 
 ### Destroy
-DELETE http://localhost:3000/snapshots/7
+DELETE http://localhost:3000/snapshots/8
 Authorization: Bearer {{jwt}}
 
 
@@ -83,7 +83,7 @@ Content-Type: application/json
 }
 
 ### Destroy
-DELETE http://localhost:3000/snapshots/1/artists/7
+DELETE http://localhost:3000/snapshots/1/artists/8
 Authorization: Bearer {{jwt}}
 
 ### Songs Actions -------------------------------------
@@ -109,7 +109,7 @@ Content-Type: application/json
 }
 
 ### Destroy
-DELETE http://localhost:3000/snapshots/1/songs/3
+DELETE http://localhost:3000/snapshots/1/songs/4
 Authorization: Bearer {{jwt}}
 
 ### Genres Actions ------------------------------------------
@@ -132,5 +132,5 @@ Content-Type: application/json
 }
 
 ### Destroy
-DELETE http://localhost:3000/snapshots/1/genres/3
+DELETE http://localhost:3000/snapshots/1/genres/6
 Authorization: Bearer {{jwt}}

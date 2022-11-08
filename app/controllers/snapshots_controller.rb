@@ -2,13 +2,13 @@ class SnapshotsController < ApplicationController
   before_action :authenticate_user
 
   def index
-    snapshots = Snapshot.all
+    snapshots = current_user.snapshots
     render json: snapshots.as_json
   end
 
   def show
     snapshot = Snapshot.find_by(id: params[:id])
-    render json: snapshot.as_json
+    render json: { title: snapshot.title, start_date: snapshot.start_date, end_date: snapshot.end_date, user_id: snapshot.user_id, user_name: snapshot.user.name, artists: snapshot.artists, songs: snapshot.songs, genres: snapshot.genres }
   end
 
   def create
