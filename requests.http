@@ -89,3 +89,6 @@ Authorization: Bearer {{jwt}}
 ### Songs Actions -------------------------------------
 ### Index
 GET http://localhost:3000/snapshots/1/songs
+
+### Show
+GET http://localhost:3000/snapshots/1/songs/1
