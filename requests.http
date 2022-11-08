@@ -89,12 +89,15 @@ Authorization: Bearer {{jwt}}
 ### Songs Actions -------------------------------------
 ### Index
 GET http://localhost:3000/snapshots/1/songs
+Authorization: Bearer {{jwt}}
 
 ### Show
 GET http://localhost:3000/snapshots/1/songs/1
+Authorization: Bearer {{jwt}}
 
 ### Create
 POST http://localhost:3000/snapshots/1/songs
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -112,15 +115,22 @@ Authorization: Bearer {{jwt}}
 ### Genres Actions ------------------------------------------
 ### Index
 GET http://localhost:3000/snapshots/1/genres
+Authorization: Bearer {{jwt}}
 
 ### Show
 GET http://localhost:3000/snapshots/1/genres/1
+Authorization: Bearer {{jwt}}
 
 ### Create
 POST http://localhost:3000/snapshots/1/genres
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
   "title": "another genre",
   "snapshot_id": 1
 }
+
+### Destroy
+DELETE http://localhost:3000/snapshots/1/genres/3
+Authorization: Bearer {{jwt}}
