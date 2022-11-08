@@ -92,3 +92,15 @@ GET http://localhost:3000/snapshots/1/songs
 
 ### Show
 GET http://localhost:3000/snapshots/1/songs/1
+
+### Create
+POST http://localhost:3000/snapshots/1/songs
+Content-Type: application/json
+
+{
+  "title": "a 4th?? song",
+  "artist": "artist name lol",
+  "album": "album title",
+  "album_art": "image.url",
+  "snapshot_id": 1
+}
