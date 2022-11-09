@@ -2,8 +2,8 @@ class SnapshotsController < ApplicationController
   before_action :authenticate_user
 
   def index
-    snapshots = current_user.snapshots
-    render json: snapshots.as_json
+    @snapshots = current_user.snapshots
+    render template: "snapshots/index"
   end
 
   def show

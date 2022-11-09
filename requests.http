@@ -65,11 +65,11 @@ Authorization: Bearer {{jwt}}
 
 ### Artists Actions ------------------------------------------
 ### Index
-GET http://localhost:3000/artists
+GET http://localhost:3000/artists.json
 Authorization: Bearer {{jwt}}
 
 ### Show
-GET http://localhost:3000/artists/1
+GET http://localhost:3000/artists/1.json
 Authorization: Bearer {{jwt}}
 
 ### Create

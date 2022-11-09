@@ -2,13 +2,13 @@ class ArtistsController < ApplicationController
   before_action :authenticate_user
 
   def index
-    artists = Artist.all
-    render json: artists.as_json
+    @artists = Artist.all
+    render template: "artists/index"
   end
 
   def show
-    artist = Artist.find_by(id: params[:id])
-    render json: artist.as_json
+    @artist = Artist.find_by(id: params[:id])
+    render template: "artists/show"
   end
 
   def create

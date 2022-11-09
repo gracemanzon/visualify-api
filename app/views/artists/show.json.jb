@@ -1,0 +1,8 @@
+{
+  id: @artist.id,
+  name: @artist.name,
+  image: @artist.image,
+  snapshot_id: @artist.snapshot_id,
+  created_at: @artist.created_at,
+  updated_at: @artist.updated_at,
+}
