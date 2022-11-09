@@ -33,7 +33,7 @@ GET http://localhost:3000/snapshots
 Authorization: Bearer {{jwt}}
 
 ### Show
-GET http://localhost:3000/snapshots/2
+GET http://localhost:3000/snapshots/1
 Authorization: Bearer {{jwt}}
 
 ### Create
