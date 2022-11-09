@@ -1,5 +1,5 @@
 ### References
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Njc5NTA1Mzd9.hn7hvlk3rJh8zd07RRhOnmVUSyWir4PZ-zriE1Xbiug
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjgwNTA5MzR9.g2kCEJnFkWQibJJ1FZJp31slKHQvLGWl0dXzs7PJDIo
 
 
 ### Users Actions --------------------------------------------
@@ -65,15 +65,15 @@ Authorization: Bearer {{jwt}}
 
 ### Artists Actions ------------------------------------------
 ### Index
-GET http://localhost:3000/snapshots/1/artists
+GET http://localhost:3000/artists
 Authorization: Bearer {{jwt}}
 
 ### Show
-GET http://localhost:3000/snapshots/1/artists/1
+GET http://localhost:3000/artists/1
 Authorization: Bearer {{jwt}}
 
 ### Create
-POST http://localhost:3000/snapshots/1/artists
+POST http://localhost:3000/artists
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
@@ -83,20 +83,20 @@ Content-Type: application/json
 }
 
 ### Destroy
-DELETE http://localhost:3000/snapshots/1/artists/8
+DELETE http://localhost:3000/artists/8
 Authorization: Bearer {{jwt}}
 
 ### Songs Actions -------------------------------------
 ### Index
-GET http://localhost:3000/snapshots/1/songs
+GET http://localhost:3000/songs
 Authorization: Bearer {{jwt}}
 
 ### Show
-GET http://localhost:3000/snapshots/1/songs/1
+GET http://localhost:3000/songs/1
 Authorization: Bearer {{jwt}}
 
 ### Create
-POST http://localhost:3000/snapshots/1/songs
+POST http://localhost:3000/songs
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
@@ -109,20 +109,20 @@ Content-Type: application/json
 }
 
 ### Destroy
-DELETE http://localhost:3000/snapshots/1/songs/4
+DELETE http://localhost:3000/songs/4
 Authorization: Bearer {{jwt}}
 
 ### Genres Actions ------------------------------------------
 ### Index
-GET http://localhost:3000/snapshots/1/genres
+GET http://localhost:3000/genres
 Authorization: Bearer {{jwt}}
 
 ### Show
-GET http://localhost:3000/snapshots/1/genres/1
+GET http://localhost:3000/genres/1
 Authorization: Bearer {{jwt}}
 
 ### Create
-POST http://localhost:3000/snapshots/1/genres
+POST http://localhost:3000/genres
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
@@ -132,5 +132,5 @@ Content-Type: application/json
 }
 
 ### Destroy
-DELETE http://localhost:3000/snapshots/1/genres/6
+DELETE http://localhost:3000/genres/6
 Authorization: Bearer {{jwt}}
