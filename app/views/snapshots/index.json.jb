@@ -6,5 +6,7 @@
     end_date: snapshot.end_date,
     image: snapshot.image,
     user_id: snapshot.user_id,
+    user_name: snapshot.user.name,
+    user_avatar: snapshot.user.avatar,
   }
 end

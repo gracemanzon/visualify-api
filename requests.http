@@ -4,7 +4,7 @@
 
 ### Users Actions --------------------------------------------
 ### Index
-GET http://localhost:3000/users
+GET http://localhost:3000/users.json
 
 ### Show
 GET http://localhost:3000/users/1.json
