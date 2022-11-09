@@ -6,6 +6,10 @@
 ### Index
 GET http://localhost:3000/users
 
+### Show
+GET http://localhost:3000/users/1.json
+Authorization: Bearer {{jwt}}
+
 ### Create
 POST http://localhost:3000/users
 Content-Type: application/json
