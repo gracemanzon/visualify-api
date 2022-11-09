@@ -29,11 +29,11 @@ Content-Type: application/json
 
 ### Snapshots Actions -----------------------------------------
 ### Index
-GET http://localhost:3000/snapshots
+GET http://localhost:3000/snapshots.json
 Authorization: Bearer {{jwt}}
 
 ### Show
-GET http://localhost:3000/snapshots/1
+GET http://localhost:3000/snapshots/1.json
 Authorization: Bearer {{jwt}}
 
 ### Create

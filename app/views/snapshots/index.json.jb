@@ -1,0 +1,10 @@
+@snapshots.map do |snapshot|
+  {
+    id: snapshot.id,
+    title: snapshot.title,
+    start_date: snapshot.start_date,
+    end_date: snapshot.end_date,
+    image: snapshot.image,
+    user_id: snapshot.user_id,
+  }
+end

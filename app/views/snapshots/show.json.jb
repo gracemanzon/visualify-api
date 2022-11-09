@@ -1,0 +1,13 @@
+{
+  id: @snapshot.id,
+  title: @snapshot.title,
+  start_date: @snapshot.start_date,
+  end_date: @snapshot.end_date,
+  image: @snapshot.image,
+  user_id: @snapshot.user_id,
+  artists: @snapshot.artists,
+  songs: @snapshot.songs,
+  genres: @snapshot.genres,
+  created_at: @snapshot.created_at,
+  updated_at: @snapshot.updated_at,
+}

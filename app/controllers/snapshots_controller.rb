@@ -7,8 +7,8 @@ class SnapshotsController < ApplicationController
   end
 
   def show
-    snapshot = Snapshot.find_by(id: params[:id])
-    render json: { title: snapshot.title, start_date: snapshot.start_date, end_date: snapshot.end_date, user_id: snapshot.user_id, user_name: snapshot.user.name, artists: snapshot.artists, songs: snapshot.songs, genres: snapshot.genres }
+    @snapshot = Snapshot.find_by(id: params[:id])
+    render template: "snapshots/show"
   end
 
   def create
