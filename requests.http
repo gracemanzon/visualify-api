@@ -41,7 +41,7 @@ GET http://localhost:3000/snapshots/1.json
 Authorization: Bearer {{jwt}}
 
 ### Create
-POST http://localhost:3000/snapshots
+POST http://localhost:3000/snapshots.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 

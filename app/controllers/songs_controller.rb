@@ -16,7 +16,7 @@ class SongsController < ApplicationController
       title: params[:title],
       artist: params[:artist],
       album: params[:album],
-      album: params[:album_art],
+      album_art: params[:album_art],
       snapshot_id: params[:snapshot_id],
     )
 
