@@ -36,8 +36,6 @@ Song.create(title: "Almost (Sweet Music)", artist: "Hozier", album: "Wasteland, 
 
 Song.create(title: "Float On", artist: "Modest Mouse", album: "good news for people who love bad news", album_art: "https://preview.redd.it/bcll5y0ihwn41.jpg?width=640&crop=smart&auto=webp&s=1006464f0062f505d6b7389d381599d881095ff9", snapshot_id: 3)
 
-Song.create(title: "Float On", artist: "Modest Mouse", album: "good news for people who love bad news", album_art: "https://preview.redd.it/bcll5y0ihwn41.jpg?width=640&crop=smart&auto=webp&s=1006464f0062f505d6b7389d381599d881095ff9", snapshot_id: 3)
-
 Song.create(title: "Put A Light On", artist: "Generationals", album: "Heza", album_art: "https://media.pitchfork.com/photos/5929ba4413d197565213b03f/1:1/w_600/f143b422.jpg", snapshot_id: 4)
 
 Genre.create(title: "Pop", snapshot_id: 1)

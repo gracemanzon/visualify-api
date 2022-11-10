@@ -4,4 +4,5 @@ class Song < ApplicationRecord
   validates :snapshot_id, presence: true
 
   belongs_to :snapshot
+  belongs_to :artist
 end

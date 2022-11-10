@@ -17,6 +17,7 @@ Content-Type: application/json
 {
   "name": "new user test",
   "email": "test@email.com",
+  "avatar": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue03&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -83,7 +84,9 @@ Content-Type: application/json
 
 {
   "name": "a 2nd artist",
-  "image": "image.url"
+  "image": "image.url",
+  "snapshot_id": 1
+
 }
 
 ### Destroy

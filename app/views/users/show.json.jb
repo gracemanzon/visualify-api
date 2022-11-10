@@ -3,6 +3,9 @@
   name: @user.name,
   avatar: @user.avatar,
   snapshots: @user.snapshots,
+  artists: @user.artists,
+  songs: @user.songs,
+  genres: @user.genres,
   created_at: @user.created_at,
   updated_at: @user.updated_at,
 }
