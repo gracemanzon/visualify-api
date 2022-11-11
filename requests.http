@@ -1,5 +1,5 @@
 ### References
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjgyMTMzNTF9.kL2uEPfW8zFpn-pQMIl_xbcyWLLSxFfiupDBRHlkxBA
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjgyODYyODl9.J4Cm7M2Dwdb6vtUChGBE7iASvMsDS8XMpFcr8cSd2as
 
 
 ### Users Actions --------------------------------------------
@@ -50,7 +50,8 @@ Content-Type: application/json
   "title": "new snapshot test",
   "start_date": "2016-03-23",
   "end_date": "2016-09-27",
-  "image": "image.url"
+  "image": "image.url",
+  "artists": ["artist 1", "artist 2"]
 }
 
 ### Update

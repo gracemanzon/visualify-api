@@ -2,7 +2,7 @@ class Snapshot < ApplicationRecord
   validates :title, presence: true
 
   belongs_to :user
-  has_many :artists
-  has_many :songs
-  has_many :genres
+  # has_many :artists
+  # has_many :songs
+  # has_many :genres
 end

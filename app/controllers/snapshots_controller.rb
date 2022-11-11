@@ -17,6 +17,7 @@ class SnapshotsController < ApplicationController
       start_date: params[:start_date],
       end_date: params[:end_date],
       image: params[:image],
+      artists: params[:artists],
       user_id: current_user.id,
     )
 
@@ -44,14 +45,14 @@ class SnapshotsController < ApplicationController
 
   def destroy
     snapshot = Snapshot.find_by(id: params[:id])
-    artist = Artist.find_by(snapshot_id: snapshot.id)
-    song = Song.find_by(snapshot_id: snapshot.id)
-    genre = Genre.find_by(snapshot_id: snapshot.id)
+    # artist = Artist.find_by(snapshot_id: snapshot.id)
+    # song = Song.find_by(snapshot_id: snapshot.id)
+    # genre = Genre.find_by(snapshot_id: snapshot.id)
     if current_user.id == snapshot.user_id
       snapshot.destroy
-      artist.destroy
-      song.destroy
-      genre.destroy
+      # artist.destroy
+      # song.destroy
+      # genre.destroy
       render json: { message: "Snapshot successfully deleted!" }
     else
       render json: { error: snapshot.errors.full_messages }, status: :unauthorized
