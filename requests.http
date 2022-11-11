@@ -51,7 +51,8 @@ Content-Type: application/json
   "start_date": "2016-03-23",
   "end_date": "2016-09-27",
   "image": "image.url",
-  "artists": ["artist 1", "artist 2"]
+  "artists": ["artist 1", "artist 2"],
+  "tracks": ["track 1", "track"]
 }
 
 ### Update

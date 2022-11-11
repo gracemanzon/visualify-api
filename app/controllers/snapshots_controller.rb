@@ -18,6 +18,7 @@ class SnapshotsController < ApplicationController
       end_date: params[:end_date],
       image: params[:image],
       artists: params[:artists],
+      tracks: params[:tracks],
       user_id: current_user.id,
     )
 
