@@ -18,6 +18,7 @@ class SongsController < ApplicationController
       album: params[:album],
       album_art: params[:album_art],
       snapshot_id: params[:snapshot_id],
+      user_id: current_user.id,
     )
 
     if song.save

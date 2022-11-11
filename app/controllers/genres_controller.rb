@@ -15,6 +15,7 @@ class GenresController < ApplicationController
     genre = Genre.new(
       title: params[:title],
       snapshot_id: params[:snapshot_id],
+      user_id: current_user.id,
     )
 
     if genre.save
