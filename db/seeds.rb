@@ -2,13 +2,13 @@ User.create(name: "mark", email: "mark@email.com", password: "password", avatar:
 
 User.create(name: "jacob", email: "jacob@email.com", password: "password", avatar: "https://avataaars.io/?avatarStyle=Circle&topType=ShortHairTheCaesar&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=White&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Pale")
 
-Snapshot.create(title: "summertime <3", start_date: "2022-06-01", end_date: "2022-09-01", image: "https://img.freepik.com/free-vector/watercolor-summer-vibes-illustration_52683-84832.jpg?w=2000", user_id: 1)
+Snapshot.create(title: "summertime <3", start_date: "2022-06-01", end_date: "2022-09-01", image: "https://img.freepik.com/free-vector/watercolor-summer-vibes-illustration_52683-84832.jpg?w=2000", artists: ["Lady Gaga", "Magic Giant"], tracks: ["Million Bucks", "Dive"], user_id: 1)
 
-Snapshot.create(title: "winter </3", start_date: "2021-11-01", end_date: "2022-03-01", image: "https://img.freepik.com/premium-vector/winter-vibes-background-watercolor_23-2148708516.jpg?w=2000", user_id: 1)
+Snapshot.create(title: "winter </3", start_date: "2021-11-01", end_date: "2022-03-01", image: "https://img.freepik.com/premium-vector/winter-vibes-background-watercolor_23-2148708516.jpg?w=2000", artists: ["Hozier", "Lindsey Stirling"], tracks: ["Los Ageless", "Almost (Sweet Music)"], user_id: 1)
 
-Snapshot.create(title: "2020", start_date: "2020-01-01", end_date: "2020-12-31", image: "https://images.pexels.com/photos/1679618/pexels-photo-1679618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", user_id: 2)
+Snapshot.create(title: "2020", start_date: "2020-01-01", end_date: "2020-12-31", image: "https://images.pexels.com/photos/1679618/pexels-photo-1679618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", artists: ["Mac Miller", "The Killers"], tracks: ["Float On"], user_id: 2)
 
-Snapshot.create(title: "2021 jumpstart", start_date: "2021-01-01", end_date: "2021-05-31", image: "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", user_id: 2)
+Snapshot.create(title: "2021 jumpstart", start_date: "2021-01-01", end_date: "2021-05-31", artists: ["Brian Fallon", "Generationals"], tracks: ["Put A Light On"], image: "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", user_id: 2)
 
 Artist.create(name: "Lady Gaga", image: "https://www.billboard.com/wp-content/uploads/media/05-lady-gaga-migos-memes-billboard-1548.jpg?w=942&h=623&crop=1", snapshot_id: 1, user_id: 1)
 
