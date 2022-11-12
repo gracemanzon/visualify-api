@@ -5,4 +5,5 @@ class Snapshot < ApplicationRecord
   # has_many :artists
   # has_many :songs
   # has_many :genres
+
 end
