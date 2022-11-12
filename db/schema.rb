@@ -43,8 +43,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_12_031552) do
     t.string "tracks", array: true
     t.string "genres", array: true
     t.string "albums", array: true
-    t.string "artist_followers", array: true
-    t.string "artist_popularity", array: true
+    t.integer "artist_followers", array: true
+    t.integer "artist_popularity", array: true
+    t.integer "track_popularity", array: true
   end
 
   create_table "songs", force: :cascade do |t|

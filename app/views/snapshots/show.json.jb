@@ -7,6 +7,7 @@
   user_id: @snapshot.user_id,
   artists: @snapshot.artists.map,
   tracks: @snapshot.tracks,
+  track_popularity: @snapshot.track_popularity,
   genres: @snapshot.genres,
   artist_followers: @snapshot.artist_followers,
   artist_popularity: @snapshot.artist_popularity,

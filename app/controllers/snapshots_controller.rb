@@ -19,6 +19,7 @@ class SnapshotsController < ApplicationController
       image: params[:image],
       artists: params[:artists],
       tracks: params[:tracks],
+      track_popularity: params[:track_popularity],
       genres: params[:genres],
       artist_popularity: params[:artist_popularity],
       artist_followers: params[:artist_followers],

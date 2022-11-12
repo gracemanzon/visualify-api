@@ -6,6 +6,7 @@
     end_date: snapshot.end_date,
     image: snapshot.image,
     tracks: snapshot.tracks,
+    track_popularity: snapshot.track_popularity,
     genres: snapshot.genres,
     artist_followers: snapshot.artist_followers,
     artist_popularity: snapshot.artist_popularity,
