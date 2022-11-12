@@ -29,6 +29,7 @@ class SnapshotsController < ApplicationController
       track_artist: params[:track_artist],
       recently_played_artist: params[:recently_played_artist],
       recently_played_album_art: params[:recently_played_album_art],
+      recently_played_popularity: params[:recently_played_popularity],
       user_id: current_user.id,
     )
 

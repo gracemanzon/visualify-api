@@ -17,6 +17,7 @@
   track_artist: @snapshot.track_artist,
   recently_played_artist: @snapshot.recently_played_artist,
   recently_played_album_art: @snapshot.recently_played_album_art,
+  recently_played_popularity: @snapshot.recently_played_popularity,
   created_at: @snapshot.created_at,
   updated_at: @snapshot.updated_at,
 }
