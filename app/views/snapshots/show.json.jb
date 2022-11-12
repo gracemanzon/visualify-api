@@ -7,8 +7,9 @@
   user_id: @snapshot.user_id,
   artists: @snapshot.artists.map,
   tracks: @snapshot.tracks,
-  # songs: @snapshot.songs,
-  # genres: @snapshot.genres,
+  genres: @snapshot.genres,
+  artist_followers: @snapshot.artist_followers,
+  artist_popularity: @snapshot.artist_popularity,
   created_at: @snapshot.created_at,
   updated_at: @snapshot.updated_at,
 }
