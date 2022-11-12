@@ -54,8 +54,8 @@ Content-Type: application/json
   "artists": ["artist 1", "artist 2"],
   "tracks": ["track 1", "track"],
   "genres": ["genre 1", "genre 2"],
-  "track_popularity": [27, 34, 3546, 2314]
-  
+  "track_popularity": [27, 34, 3546, 2314],
+
 }
 
 ### Update

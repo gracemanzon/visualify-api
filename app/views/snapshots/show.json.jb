@@ -11,6 +11,12 @@
   genres: @snapshot.genres,
   artist_followers: @snapshot.artist_followers,
   artist_popularity: @snapshot.artist_popularity,
+  artist_images: @snapshot.artist_images,
+  album_images: @snapshot.album_images,
+  recently_played: @snapshot.recently_played,
+  track_artist: @snapshot.track_artist,
+  recently_played_artist: @snapshot.recently_played_artist,
+  recently_played_album_art: @snapshot.recently_played_album_art,
   created_at: @snapshot.created_at,
   updated_at: @snapshot.updated_at,
 }
