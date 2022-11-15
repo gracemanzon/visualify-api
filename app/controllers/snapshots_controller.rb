@@ -32,6 +32,7 @@ class SnapshotsController < ApplicationController
       recently_played_album_art: params[:recently_played].map { |item| item[:track] }.map { |track| track[:album] }.map { |album| album[:images] }.map { |image| image[0][:url] },
       recently_played_popularity: params[:recently_played].map { |item| item[:track][:popularity] },
       user_id: current_user.id,
+      # artists_attributes: { name: params[:artists].map { |artist| artist[:name] } },
     )
 
     if snapshot.save
