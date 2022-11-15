@@ -1,5 +1,5 @@
 ### References
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjgyODYyODl9.J4Cm7M2Dwdb6vtUChGBE7iASvMsDS8XMpFcr8cSd2as
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Njg2MjE4NjZ9.qZY4MHzuPQDI2lSwq2y85w_DzwO9zJvAOh1-t2CRbCw
 
 
 ### Users Actions --------------------------------------------
@@ -38,7 +38,7 @@ GET http://localhost:3000/snapshots.json
 Authorization: Bearer {{jwt}}
 
 ### Show
-GET http://localhost:3000/snapshots/6.json
+GET http://localhost:3000/snapshots/46.json
 Authorization: Bearer {{jwt}}
 
 ### Create

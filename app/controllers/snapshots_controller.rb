@@ -17,26 +17,27 @@ class SnapshotsController < ApplicationController
       start_date: params[:start_date],
       end_date: params[:end_date],
       image: params[:image],
-      artists: params[:artists],
-      tracks: params[:tracks],
-      track_popularity: params[:track_popularity],
+      artists: params[:artists].map { |artist| artist[:name] },
       genres: params[:genres],
-      artist_popularity: params[:artist_popularity],
-      artist_followers: params[:artist_followers],
-      artist_images: params[:artist_images],
-      album_images: params[:album_images],
-      recently_played: params[:recently_played],
-      track_artist: params[:track_artist],
-      recently_played_artist: params[:recently_played_artist],
-      recently_played_album_art: params[:recently_played_album_art],
-      recently_played_popularity: params[:recently_played_popularity],
+      artist_images: params[:artists].map { |artist| artist[:images] }.map { |image| image[0][:url] },
+      artist_popularity: params[:artists].map { |artist| artist[:popularity] },
+      artist_followers: params[:artists].map { |artist| artist[:followers][:total] },
+      tracks: params[:tracks].map { |track| track[:name] },
+      track_artist: params[:tracks].map { |track| track[:artists] }.map { |artists| artists[0][:name] },
+      track_popularity: params[:tracks].map { |track| track[:popularity] },
+      albums: params[:tracks].map { |track| track[:album] }.map { |album| album[:name] },
+      album_images: params[:tracks].map { |track| track[:album] }.map { |album| album[:images] }.map { |image| image[0][:url] },
+      recently_played: params[:recently_played].map { |item| item[:track] }.map { |track| track[:name] },
+      recently_played_artist: params[:recently_played].map { |item| item[:track] }.map { |track| track[:artists][0][:name] },
+      recently_played_album_art: params[:recently_played].map { |item| item[:track] }.map { |track| track[:album] }.map { |album| album[:images] }.map { |image| image[0][:url] },
+      recently_played_popularity: params[:recently_played].map { |item| item[:track][:popularity] },
       user_id: current_user.id,
     )
 
     if snapshot.save
       render json: snapshot.as_json, status: :created
     else
-      render json: { error: snapshot.errors.full_messages }, status: :bad_request
+      render json: { error: snapshot.errors.full_messages }
     end
   end
 
@@ -57,14 +58,8 @@ class SnapshotsController < ApplicationController
 
   def destroy
     snapshot = Snapshot.find_by(id: params[:id])
-    # artist = Artist.find_by(snapshot_id: snapshot.id)
-    # song = Song.find_by(snapshot_id: snapshot.id)
-    # genre = Genre.find_by(snapshot_id: snapshot.id)
     if current_user.id == snapshot.user_id
       snapshot.destroy
-      # artist.destroy
-      # song.destroy
-      # genre.destroy
       render json: { message: "Snapshot successfully deleted!" }
     else
       render json: { error: snapshot.errors.full_messages }, status: :unauthorized
