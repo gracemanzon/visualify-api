@@ -9,7 +9,7 @@ Visualify is a browser based app that is inspired by Spotify Wrapped and combine
 
 ![screenshot](/assets/visualify-preview.png)
 
-## Installation
+## Installation + Dependencies
 
 - ruby 3.1.2
 - rails 7.0.4
