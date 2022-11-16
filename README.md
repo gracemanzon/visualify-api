@@ -13,6 +13,9 @@ Visualify is a browser based app that is inspired by Spotify Wrapped and combine
 
 - ruby 3.1.2
 - rails 7.0.4
+- gem "jwt"
+- gem "jb"
+- gem "rack-cors"
 
 ```bash
 bundle install
