@@ -1,24 +1,30 @@
-# README
+# <Spotify Data Visualizer>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Visualify is a browser based app that is inspired by Spotify Wrapped and combines a users realtime Spotify account data with detailed graphs. This rails backend works in conjuction with a react frontend found here: [visualify-frontend](https://github.com/gracemanzon/visualify-frontend)
 
-Things you may want to cover:
+- RESTful backend built with Ruby on Rails using an MCV architecture
+- User authentication with using JSON web tokens
+- Frontend built with React and allowing Spotify API connect using OAuth
+- Personalized charts genreated with the Plotly library for React
 
-* Ruby version
+![screenshot](/assets/visualify-preview.png)
 
-* System dependencies
+## Installation
 
-* Configuration
+```bash
+bundle install
+rails db:create db:migrate db:seed
+```
 
-* Database creation
+## Usage
 
-* Database initialization
+```bash
+rails server
+```
 
-* How to run the test suite
+You can test web requests as documented in the `requests.http` file.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Roadmap
 
-* Deployment instructions
-
-* ...
+- Narrowing Top Artists/Top Tracks view by 6 week periods
+- P5.js or CanvasSketch integration to produce personalized graphics
