@@ -1,4 +1,4 @@
-# <Spotify Data Visualizer>
+# Visualify - Spotify Data Visualizer
 
 Visualify is a browser based app that is inspired by Spotify Wrapped and combines a users realtime Spotify account data with detailed graphs. This rails backend works in conjuction with a react frontend found here: [visualify-frontend](https://github.com/gracemanzon/visualify-frontend)
 
